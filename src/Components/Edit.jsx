@@ -39,7 +39,7 @@ const Edit = (props) => {
             sdata.tag2=data.tag2
         }
         // console.log(sdata)
-        let res = await axios.put('http://localhost:3000/updateproduct', sdata, {
+        let res = await axios.put('https://affiliate-back-x12u.onrender.com/updateproduct', sdata, {
             withCredentials: true,
         });
         if (res.data.status) {

@@ -8,7 +8,7 @@ const Update = () => {
   const [editpop, setEditpop] = useState(-1)
 
   const getlist = async () => {
-    let res = await axios.get('http://localhost:3000/getlist')
+    let res = await axios.get('https://affiliate-back-x12u.onrender.com/getlist')
     setList(res.data)
 
   }
@@ -21,7 +21,7 @@ const Update = () => {
     let c = confirm("Do yo really want to remove product")
     if (c) {
       let data = { id: id }
-      let res = await axios.put('http://localhost:3000/removeproduct', data, {
+      let res = await axios.put('https://affiliate-back-x12u.onrender.com/removeproduct', data, {
         withCredentials: true,
       })
       getlist()

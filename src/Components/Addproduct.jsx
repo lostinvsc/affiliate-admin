@@ -18,7 +18,7 @@ const Addproduct = () => {
     const onSubmit = async (data) => {
         let sdata = data
 
-        let res = await axios.post('http://localhost:3000/addproduct', sdata, {
+        let res = await axios.post('https://affiliate-back-x12u.onrender.com/addproduct', sdata, {
             withCredentials: true,
         });
         if (res.data.status) {
