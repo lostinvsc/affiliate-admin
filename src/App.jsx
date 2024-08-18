@@ -7,8 +7,6 @@ import Update from './Components/Update.jsx'
 
 function App() {
 
-  // const [count, setCount] = useState(0)
-
   const router = createBrowserRouter([
     {
       path: '/',
